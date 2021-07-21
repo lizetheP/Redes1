@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html style="height: 100%;" lang="es"><!-- InstanceBegin template="/Templates/platilla.dwt" codeOutsideHTMLIsLocked="false" --><head>
+   <!-- InstanceBeginEditable name="doctitle" -->
+<title>COMPARACIÓN DE LOS MODELOS OSI Y TCP/IP</title>
+<!-- InstanceEndEditable -->
+    <!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#800101">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#800101">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#800101">
+    <!-- InstanceBeginEditable name="charset" -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- InstanceEndEditable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="MetaTags" --> <!-- InstanceEndEditable -->
+	<meta name="author" content="Universidad Autónoma del Estado de Hidalgo">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#800101">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#800101">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#800101">
+ 
+	<link rel="stylesheet" href="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/style-uaeh-internas.css">
+    <link rel="stylesheet" href="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/social-share-kit.css" type="text/css">
+    <!-- InstanceBeginEditable name="head" -->
+<link href="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/main.css" rel="stylesheet" type="text/css">
+
+<!-- InstanceEndEditable -->
+     <!--Google analitics-->
+	<script type="text/javascript" async="" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/atrk.js"></script><script async="" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/analytics.js"></script><script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-33872262-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+    <!--Google analitics-->
+    
+    <!-- tracking systems -->
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+    _atrk_opts = { atrk_acct:"xP59k1a0CM00Or", domain:"uaeh.edu.mx",dynamic: true};
+    (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    </script>
+    <!--<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=xP59k1a0CM00Or" style="display:none" height="1" width="1" alt="" /></noscript>-->
+    <!-- End Alexa Certify Javascript -->
+    
+    <!--<meta name="verify-a" content="5a9f35505dbe007c9a6c" />-->
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/main.js"></script><script type="text/javascript" charset="UTF-8" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/element_main.js"></script></head>
+<body style="position: static; min-height: 100%; top: 0px;"><div style="display: none;" class="skiptranslate"><iframe id=":2.container" class="goog-te-banner-frame skiptranslate" src="javascript:''" style="visibility:visible" frameborder="0"></iframe></div> 
+<div id="filter-panel" class="collapse filter-panel bot_bus">
+    <form class="form-inline" action="/buscador/" method="get" accept-charset="UTF-8">
+        <div class="form-group"> 	
+            <input class="form-control input-sm" id="pref-search" name="q" placeholder="Buscar micrositios o páginas" type="text">
+             
+        </div>
+        
+        
+    </form>    
+</div>
+
+ <div id="filter-panelTrans" class="collapse filter-panel bot_bus">
+                <div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" style="white-space: nowrap;" class="goog-te-gadget-simple"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cleardot.gif" alt="" width="1" height="1"><span style="color: rgb(118, 118, 118);" aria-hidden="true">▼</span></a></span></div></div></div>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ar,de,el,en,fr,hi,it,ja,la,pt,ru,sv,tr,uk,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-33872262-1'}, 'google_translate_element');
+                    }
+                </script>
+                 <script type="text/javascript" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/element.js"></script>
+    </div>
+
+<div class="sidebarUAEH">
+    <div id="content-menu-lateral"><h2>MENÚ</h2>
+        <ul>
+        	<li><a href="https://www.uaeh.edu.mx/enlaces/">Enlaces</a></li>
+            <li><a href="https://www.uaeh.edu.mx/dependencias/">Dependencias A-Z</a></li>
+            <li><a href="https://www.uaeh.edu.mx/directorio/">Directorio</a></li>
+            <li><a href="https://www.uaeh.edu.mx/defensor_univ/">Defensor Universitario</a></li>
+            <li><a href="https://www.uaeh.edu.mx/patronato/">Patronato</a></li>
+            <li><a href="http://repository.uaeh.edu.mx/">Publicaciones en línea</a></li>
+            <li><a href="https://www.uaeh.edu.mx/alumnado/">Alumnado</a></li>
+            <li><a href="https://www.uaeh.edu.mx/aspirantes/">Aspirantes</a></li>
+            <li><a href="https://www.uaeh.edu.mx/personal/">Personal</a></li>
+            <li><a href="https://www.uaeh.edu.mx/egresados/">Alumni</a></li>
+            <li><a href="https://www.uaeh.edu.mx/visitantes/">Visitantes</a></li> 
+        </ul></div>
+</div>
+ 
+<div class="conten-all"> 
+	<div class="row fondomenutoplat">
+    	<div class="col-xs-1 col-sm-1 visible-xs">
+           <a id="btn1" class="sidebtn btn-gira sidemenu-bar"><span></span></a>
+        </div>
+        <div class="col-xs-8 col-sm-8 visible-xs"></div>
+        <div class="col-xs-1 col-sm-1 visible-xs">
+        	<button type="button" class="btn icon_bus" data-toggle="collapse" data-target="#filter-panel" onclick="javascript:CambiarEstilo2();">
+            		<span class="fa fa-search fa-inverse fa-lg" id="btn-busqueda2"></span>
+        	</button>
+        </div>
+        <div class="col-xs-1 col-sm-1 visible-xs">
+        	<button type="button" class="btn icon_bus" data-toggle="collapse" data-target="#filter-panelTrans" onclick="javascript:CambiarEstilo();">
+                    <span class="fa fa-globe fa-inverse fa-lg" id="btn-idioma2"></span>
+                    </button>
+        </div>
+    </div>
+    
+	<!-- MENU 1 -->
+	<div id="content-menu-top"><nav class="navbar navbar-uaeh-top" role="navigation">
+        <div class="collapse navbar-collapse fondomenutop">
+        	
+        	<ul class="nav navbar-nav navbar-left">
+                <li class="hidden-sm hidden-xs hidden-sm-plus"><a href="https://www.uaeh.edu.mx/enlaces/">Enlaces</a></li>
+                <li class="hidden-sm hidden-xs hidden-sm-plus"><a href="https://www.uaeh.edu.mx/dependencias/">Dependencias A-Z</a></li> 
+                <li class="hidden-sm hidden-xs hidden-sm-plus"><a href="https://www.uaeh.edu.mx/directorio/">Directorio</a></li> 
+                <li class="hidden-sm hidden-xs hidden-sm-plus"><a href="https://www.uaeh.edu.mx/defensor_univ/">Defensor Universitario</a></li>
+                <li class="hidden-sm hidden-xs hidden-sm-plus"><a href="https://www.uaeh.edu.mx/patronato/">Patronato</a></li> 
+                <li class="dropdown visible-sm visible-sm-plus">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú <i class="fa fa-caret-down fa-lg"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://www.uaeh.edu.mx/enlaces/">Enlaces</a></li>
+                    <li><a href="https://www.uaeh.edu.mx/dependencias/">Dependencias A-Z</a></li>
+                    <li><a href="https://www.uaeh.edu.mx/directorio/">Directorio</a></li>
+                    <li><a href="https://www.uaeh.edu.mx/defensor_univ/">Defensor Universitario</a></li>
+                    <li><a href="https://www.uaeh.edu.mx/patronato/">Patronato</a></li>
+                  </ul>
+                </li>                  
+            </ul>           
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li><a href="http://repository.uaeh.edu.mx/">Publicaciones en línea</a></li>
+                <li><a href="https://www.uaeh.edu.mx/alumnado/">Alumnado</a></li>
+                <li><a href="https://www.uaeh.edu.mx/aspirantes/">Aspirantes</a></li>
+                <li><a href="https://www.uaeh.edu.mx/personal/">Personal</a></li>
+                <li><a href="https://www.uaeh.edu.mx/egresados/">Alumni</a></li>
+                <li><a href="https://www.uaeh.edu.mx/visitantes/">Visitantes</a></li> 
+                <li class="buspp"> 
+                	<button type="button" class="btn icon_bus" data-toggle="collapse" data-target="#filter-panel" onclick="javascript:CambiarEstilo2();">
+            		<span class="fa fa-search fa-inverse" id="btn-busqueda"></span>
+        			</button>
+        		</li>
+                <li class="buspp">
+                	<button type="button" class="btn icon_bus" data-toggle="collapse" data-target="#filter-panelTrans" onclick="javascript:CambiarEstilo();">
+                    <span class="fa fa-globe fa-inverse" id="btn-idioma"></span>
+                    </button>
+                </li>
+             
+            </ul> 
+            
+        </div>                                  
+            
+       <!--TITULO Y LOGOTIPO-->
+         <div class="container">
+            <div class="row row-centered">
+            	<div class="col-centered">
+                  <a href="https://www.uaeh.edu.mx/"><div class="logo hidden-xs"></div><div id="encabezado_uaeh">Universidad Autónoma del Estado de Hidalgo</div></a>
+                  </div>
+                 </div>
+         </div>
+
+	</nav></div> 
+	<!-- FIN MENU 1 --> 
+    
+    <!-- TITULO -->
+ 	
+    	<div class="row row-centered row_titulo">
+          		<div id="titulo_micrositio">
+          		<!-- InstanceBeginEditable name="titulo" -->
+          		
+         		<!-- InstanceEndEditable -->
+          		</div>
+    	</div>
+    <!-- END TITULO --> 
+    
+    
+   <!-- SLIDER -->
+   <!--<div id="content-slider"></div>-->
+   <!-- END SLIDER -->
+   
+   <div class="container modd">
+   	 <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="navegacion"></div> 
+      </div>
+   	 <div class="row">
+     	<div id="menu_izquierdo" class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/historial.html" target="_parent">BOLETINES ANTERIORES </a></li>  
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/index.html">PORTADA</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/titulo.html">TÍTULO</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/comite.html">COMITÉ EDITORIAL</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/disclaimer.html">AVISO LEGAL</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/editorial.html" target="_parent">EDITORIAL</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/contents.html" target="_parent">CONTENIDO</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/sub_menu_a.html">ARTÍCULOS</a></li>
+<li> <a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/sub_menu_m.html">RESÚMENES, MAPAS O DIAGRAMAS DE APLICACIÓN DEL CONOCIMIENTO</a></li> 
+<li><a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/sub_menu_r.html">RESEÑAS</a></li>
+<li><a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/sub_menu_p.html">REPORTES DE INVESTIGACIÓN O PRÁCTICAS</a></li>
+<li><a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/sub_menu_b.html">BIBLIOGRAFíA</a></li>
+  
+
+  
+</div>
+   		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div id="contenido">
+            	<!-- InstanceBeginEditable name="contenido" -->
+               <h3>COMPARACIÓN DE LOS MODELOS OSI Y TCP/IP</h3>
+
+  
+    <p class="banner">Eduardo Aguirre Hernández<sup><a href="#refe1" id="r1">[a]</a></sup>, Jesús Calva Bautista<sup><a href="#refe1">[a]</a></sup>, Alain  Ezau Guerrero Zenil<sup><a href="#refe1">[a]</a></sup>, Adolfo  Alonso Hernández Medellín<sup><a href="#refe1">[a]</a></sup>, Santos  Hernández Hernández<sup><a href="#refe1">[a]</a></sup>, Gonzalo Hernández Hernández<sup><a href="#refe2" id="r2">[b]</a></sup></p>
+
+  <h4>Resumen</h4>
+  <p class="asangre">El Protocolo de control de transmisión (TCP) es un 
+protocolo utilizado para todos los nodos conectados a internet de manera
+ que estos se puedan comunicar entre sí de manera fiable. Se trata de un
+ protocolo orientado a la conexión que junto con el protocolo IP ha 
+servido de base para el modelo TCP/IP, utilizado desde antes de que se 
+estableciera el Modelo OSI (Interconexiones de Sistemas Abiertos) y por 
+esta razón el modelo TCP/IP ha sido comparado con el modelo OSI.  </p>
+  
+  <p><br><strong>Palabras clave:</strong> Protocolo IP, Modelo OSI, TCP Protocol.</p>
+  
+  <h4>Abstract</h4>
+  <p class="asangre">The Transmission Control Protocol (TCP) is in the 
+third layer of the model, as is the Internet Protocol (TCP / IP), it is a
+ protocol used for all nodes connected to the Internet so that they can 
+communicate each. It is a connection-oriented protocol, used before the 
+OSI (Open System Interconnections) model was established, and since then
+ the TCP / IP model has been compared to the OSI model.</p>
+  
+  <p><br><strong>Keywords:</strong> IP Protocol, ISO Model, TCP Protocol.</p>
+  
+  <h4>1.- Introducción</h4>
+   
+   <p class="asangre">Se conoce como familia de protocolos de Internet 
+al conjunto de protocolos que son implementados por la pila de 
+protocolos sobre los cuales se fundamenta Internet y que permiten la 
+transmisión de datos entre las redes de computadoras. </p>
+   
+<p>
+Los dos protocolos más importantes y que fueron también los primeros en 
+definirse y en ser utilizados son: TCP (Protocolo 	de Control de 
+Transmisión o Transmission Control Protocol) e IP (Protocolo de Internet
+ o Internet Protocol), de ahí que el modelo se denomine como TCP/IP. Los
+ protocolos existentes superan los cien, ente los cuales podemos 
+mencionar como los más conocidos a HTTP, FTP, SMTP, POP, ARP, entre 
+otros. TCP/IP es la plataforma que sostiene Internet y que permite la 
+comunicación entre dos equipos, no importando si estos cuentan con 
+diferentes sistemas operativos, ya sea sobre redes de área local (LAN) o
+ redes de área extensa (WAN). </p>
+
+<p>
+El modelo TCP/IP es un protocolo dirigido a la transferencia de 
+información a través de internet, o, dicho de otra manera, es un 
+protocolo utilizado por todas las computadoras conectadas a una red, de 
+manera que estos puedan comunicarse entre sí.  </p>
+
+<p>
+Por otro lado, el modelo OSI ha servido como fundamento teórico para la 
+interconexión de sistemas abiertos, basándose en un conjunto de siete 
+capas. Cada capa cumple funciones específicas requeridas para comunicar 
+dos sistemas mediante una estructura jerárquica. Cualquiera de sus siete
+ capas se apoya en la capa anterior, realiza su función y ofrece un 
+servicio a la capa superior. De acuerdo con <sup>[1]</sup>, este modelo posee la ventaja de poder cambiar una capa sin necesidad de </p>
+   
+<h4>2.- El Modelo OSI</h4>
+
+<p class="asangre">El modelo OSI (Modelo para la Interconexión de 
+Sistemas Abiertos), Figura 1 se compone de siete niveles de proceso, 
+mediante el cual los datos se empaquetan y se transmiten desde una 
+aplicación emisora, viajando a través de medios físicos hasta llegar a 
+una aplicación receptora.</p>
+
+<div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_1.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_1p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 1. Capas del Modelo OSI.</p></div>
+
+<p>La capa de aplicación: proporciona los servicios utilizados por las 
+aplicaciones para que los usuarios se comuniquen a través de la red. Es 
+el nivel más cercano al usuario.</p> 
+
+<p>
+La capa de presentación: define el formato de los datos que se van a 
+intercambiar entre las aplicaciones, ofreciendo un conjunto de servicios
+ para la transformación de datos.</p>
+ 
+<p>
+La capa de sesión: proporciona los mecanismos para controlar el diálogo 
+entre las aplicaciones de los sistemas finales: abre, mantiene y cierra 
+la sesión entre dos sistemas.</p>
+
+<p> 
+La capa de transporte: permite intercambiar datos entre sistemas 
+finales, dividiendo el mensaje en varios fragmentos. El servicio de 
+transporte puede ser orientado o no orientado a conexión, tomando en 
+cuenta la unidad de transferencia máxima (MTU).</p>
+ 
+<p>
+La capa de red: se encarga de definir el camino que seguirán los datos 
+desde el origen hasta su destino a través de una o más redes conectadas 
+mediante dispositivos de enrutamiento (router).</p>
+
+<p>
+La capa de enlace de datos: se ocupa del direccionamiento físico dentro 
+de cualquier topología de red, esta capa nos permite activar, mantener y
+ deshabilitar la conexión, así como la notificación de errores.</p>
+
+<p>
+La capa física: controla las señales por donde viajaran los datos (cable de par trenzado, fibra óptica, radio frecuencia).
+</p>
+
+<h4>3.- El modelo TCP/IP</h4>
+
+<p class="asangre">El modelo TCP/IP (Protocolo para el Control de 
+Transmisión/ Protocolo de Internet), Figura 2 está compuesto por cuatro 
+capas, en la que cada una se encarga de determinados aspectos en la 
+comunicación y a su vez cada una brinda un servició especifico a la capa
+ superior.</p>
+
+<div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_2.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_2p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 2. Capas del Modelo TCP/IP</p></div>
+
+<h6>3.1 Capa de Aplicación</h6>
+
+<p class="asangre">Esta capa del protocolo TCP/IP, maneja protocolos de 
+alto nivel que permiten la de representación de los datos, codificación y
+ control de dialogo (aplicación, transporte y sesión respectivamente en 
+OSI). Algunos de los protocolos descritos en <sup>[2]</sup> que operan en esta capa son:</p> 
+
+<p>
+FTP (Protocolo de transferencia de archivos): es un servicio confiable 
+orientado a conexión que utiliza TCP para transferir archivos entre 
+sistemas que admiten la transferencia FTP. Permite las transferencias 
+bidireccionales de archivos binarios y archivos ASCII. 
+</p>
+
+<p>
+TFTP (Protocolo trivial de transferencia de archivos): es un servicio no
+ orientado a conexión que utiliza el Protocolo de datagrama de usuario 
+(UDP). Es útil en algunas LAN porque opera más rápidamente que FTP en un
+ entorno estable. 
+				</p>
+				
+				<p>
+NFS (Sistema de archivos de red): es un conjunto de protocolos para un 
+sistema de archivos distribuido, desarrollado por Sun Microsystems que 
+permite acceso a los archivos de un dispositivo de almacenamiento 
+remoto, por ejemplo, un disco rígido a través de una red. </p>
+
+<p>
+SMTP (Protocolo simple de transferencia de correo): administra la 
+transmisión de correo electrónico a través de las redes informáticas. No
+ admite la transmisión de datos que no sea en forma de texto simple. </p>
+
+<p>
+TELNET (Emulación de terminal): Telnet tiene la capacidad de acceder de 
+forma remota a otro computador. Permite que el usuario se conecte a un 
+host de Internet y ejecute comandos. El cliente de Telnet recibe el 
+nombre de host local. El servidor de Telnet recibe el nombre de host 
+remoto.
+ </p>
+
+<p>
+SNMP (Protocolo simple de administración de red): es un protocolo que 
+provee una manera de monitorear y controlar los dispositivos de red y de
+ administrar las configuraciones, la recolección de estadísticas, el 
+desempeño y la seguridad.
+			</p>
+			
+			
+<p>DNS (Sistema de nombres de dominio): es un sistema que se utiliza en 
+Internet para convertir los nombres de los dominios y de sus nodos de 
+red publicados abiertamente en direcciones IP.
+</p>
+
+				<h6>3.2.- Capa de Transporte</h6>
+				 
+<p class="asangre">En esta capa se establece una conexión lógica entre 
+el host transmisor y el host receptor. Los protocolos de transporte 
+segmentan los datos en el host origen para que las capas inferiores 
+realicen el envío y una vez que estos llegan a su destino, son 
+ensamblados para recuperar el mensaje original, brindando de esta manera
+ un transporte de extremo a extremo.</p>
+ 
+<p>
+Otra tarea que le compete a la capa de transporte, consiste en la 
+asignación de números de puerto a los procesos que se ejecutan en las 
+aplicaciones y añade una cabecera TCP o UDP para los mensajes recibidos 
+de las aplicaciones que detallan los números de puerto de origen y 
+destino. </p>
+
+<p>
+En lo que se refiere al modelo TCP/IP, los protocolos encargados del 
+transporte de datos son dos: TCP (Transmission Control Protocol: 
+Protocolo de Control de la Transmisión) y UDP (User Datagrama Protocol: 
+Protocolo de Datagramas de Usuario), ambos protocolos trabajan de forma 
+muy diferente y están orientados a distintos usos. Existen aplicaciones 
+que utilizan TCP y otras que usan UDP. (No hay que pensar que TCP es 
+mejor que UDP en general o viceversa). </p>
+
+<p>
+En la Figura 3 se muestran las capas del modelo OSI y TCP/IP en la cual 
+enumera las capas desde la capa superior (Aplicación) hasta la capa 
+inferior (Red física).
+</p>
+
+<div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_3.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_3p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 3. Comparativa de capas de Modelo OSI y TCP/IP</p></div>
+   
+   
+   <p>En la Figura 4 se puede observar el conjunto de protocolos en la arquitectura TCP/IP. </p>
+   
+ <div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_4.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_4p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 4. Protocolos de la arquitectura TCP/IP.</p></div>  
+   
+  
+				<p>Algunas de las diferencias más notables entre TCP y UDP son:</p>
+				
+<p>
+Orientado a conexión: El protocolo TCP utiliza la detección de errores, 
+retransmisiones y reconocimientos, aunque implica bastante tráfico 
+adicional en la red.</p>
+ 
+<p>
+No Orientado a conexión: UDP ofrece un servicio poco fiable, aunque rápido y con poca carga adicional en la red.</p>
+ 
+<p>
+Encapsulamiento: Los segmentos o PDU empleados por los protocolos TCP y 
+UDP se encapsulan dentro del campo de datos de paquetes IP. La cabecera 
+(Figura 5) añadida a los mensajes de la capa de transporte incluye no 
+sólo el origen y destino de puerto número. El protocolo TCP requiere más
+ información y los gastos generales para garantizar la entrega de datos.
+ 
+</p>
+       
+ <div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_5.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_5p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 5. Cabecera TCP.</p></div>
+       
+ <h6>3.3.- Capa de Internet</h6> 
+ 
+<p class="asangre">Esta capa tiene como finalidad seleccionar la mejor 
+ruta para transmitir los paquetes por la red, de tal manera que cada 
+paquete atraviese la menor cantidad de routers en el menor tiempo 
+posible. El protocolo principal que opera en la capa es el protocolo de 
+internet (IP). </p>
+
+<p>
+El protocolo IP es un protocolo no orientado a conexión de máximo 
+esfuerzo que auxilia en el enrutamiento de paquetes (o datagramas). El 
+término no orientado a conexión no significa que no enviará 
+correctamente los datos a través de la red, sino que IP no realiza la 
+verificación y la corrección de errores. Un datagrama IP se compone de 
+diferentes campos (Figura 6):</p>
+
+				<p>
+Versión (4 bits): Es la versión del protocolo IP que se está utilizando para identificar la validez del datagrama </p>
+
+<p>
+Longitud del encabezado (4 bits): Es la cantidad de palabras de 32 bits que componen el encabezado (el valor mínimo es 5). </p>
+
+<p>
+	Tipo de servicio (8 bits): Indica la forma en la que se debe procesar el datagrama.</p> 
+
+<p>
+Longitud total (16 bits): Es la longitud total del datagrama, cabecera y datos, especificada en bytes. </p>
+
+<p>
+Identificador, indicador y margen del fragmento: Son campos que permiten la fragmentación de datagramas.</p> 
+
+<p>
+Tiempo de vida o TTL (8 bits): Este campo especifica el número de 
+routers por los que puede pasar un datagrama. Este campo disminuye con 
+cada paso por un router y alcanza el valor critico de 0, el router 
+destruye el datagrama, así se evita la sobrecarga a la red de datagramas
+ perdidos. </p>
+
+<p>
+	Protocolo (8 bits): Este campo permite saber de qué protocolo proviene el datagrama.</p> 
+
+<p>
+Suma de comprobación del encabezado (16 bits): Es la suma de todas las 
+palabras de 16 bits del encabezado (excluye el campo de suma de 
+comprobación). </p>
+
+<p>
+	Dirección IP de origen (32 bits): Dirección IP del host remitente. </p>
+
+<p>
+Dirección IP de destino (32 bits): Dirección IP del host destino. 
+ 
+</p>
+       
+<div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_6.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_6p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 6. Cabecera IP.</p></div> 
+    
+ <p>El tamaño máximo (MTU: Unidad Máxima de Transferencia) de un 
+datagrama es de 65536 bytes. Sin embargo, este valor nunca es alcanzado 
+por que las redes no tienen la capacidad para enviar paquetes tan 
+grandes. Las redes en Internet utilizan diferentes tecnologías por lo 
+que el tamaño máximo de un datagrama varía según el tipo de red (ver 
+Figura 7). </p>  
+                 
+ <div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_7.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_7p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 7. Tamaño de MTU en diferentes tecnologías de red.</p></div>
+                   
+		 <h6>3.4.- Capa de acceso a la red</h6>
+		 
+<p class="asangre">A esta capa también se le conoce como “capa de host 
+de red”, y en ella se manejan todos los aspectos que un paquete IP 
+requiere para efectuar un enlace físico real con los medios de la red. 
+En ella se incluyen los detalles de la tecnología LAN Y WAN y todos los 
+detalles de la capa física y de enlace de datos del modelo OSI. </p>
+
+<p>
+Además, en esta capa se definen los procedimientos para crear una 
+interfaz entre la maquina terminal y el hardware de la red, de tal 
+manera que se logre tener acceso al medio de transmisión, sobre el cual 
+viajarán los datos.</p> 
+
+<h4>4.- Comparación entre OSI y TCP/IP</h4>
+
+<p class="asangre">Indudablemente, ambos modelos son de gran importancia
+ al momento de estudiar las comunicaciones en redes, ya que definen la 
+comunicación por medio de una arquitectura basada en capas (ver Figura 
+8). Sin embargo, existen algunas características entre uno y otro que 
+los hacen diferentes, aunque el propósito para el que fueron creados sea
+ el mismo.</p>
+
+<p>
+En lo que se refiere al modelo OSI, se trata de un conjunto de siete 
+capas, siendo la capa de aplicación la más cercana al usuario y la capa 
+física la más alejada a él. En cada una de sus capas se ofrece un 
+servicio que contribuye con una parte de la comunicación, dicho servicio
+ es implementado a través de un protocolo y la manera de comunicarse con
+ sus capas adyacentes es llevada a cabo mediante el establecimiento de 
+una interfaz, es decir, la capa n solo puede comunicarse con las capas 
+n-1 y n+1, siendo la capa física la que realmente conecta a ambas 
+máquinas, ya que es a través de esta donde fluyen los mensajes en forma 
+de bits.</p> 
+                   
+<div class="centrado">
+	<a href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_8.jpg" rel="clearbox"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_8p.jpg" alt=""></a>
+   <p class="pie_foto">Figura 8. Comparativa de las capas de Modelo OSI y TCP/IP.</p></div>
+                    
+ <p>Durante el envío de un mensaje desde una máquina A hacia otra 
+máquina B, el mensaje debe iniciar su viaje desde la capa de aplicación 
+de la maquina A, hacer un descenso en cada una de sus capas hasta llegar
+ a la capa física (encapsulamiento). Una vez que esto sucede, el mensaje
+ debe viajar por el medio (en forma de señales eléctricas o 
+electromagnéticas) hasta llegar a la maquina B, donde será recibido por 
+la capa física y transferido a sus capas superiores para llevar a cabo 
+el proceso inverso (desencapsulamiento), la transmisión concluye cuando 
+el mensaje llega a la capa de aplicación en B. </p>
+
+<p>
+Sin embargo, aunque OSI es un excelente modelo, solo ha servido como 
+referente teórico por lo general y detallado que es; mientras que en 
+términos prácticos se opta por TCP/IP debido a que los protocolos para 
+este último son más adecuados a la realidad.</p> 
+
+<h4>5.- Critica</h4>      
+
+<p class="asangre">Los primeros documentos que definen a los protocolos 
+TCP e IP se encuentran en los RFC 793 y RFC 791, respectivamente y es a 
+través de ellos por los cuales se desarrolló la internet de modo que la 
+funcionalidad del modelo TCP/IP se debe en gran medida a estos dos 
+protocolos. En comparación las redes típicas no se desarrollan 
+normalmente a partir del modelo OSI, aunque este se presenta más como 
+una guía.</p>
+
+<p>
+La representación que se presenta en el modelo OSI y TCP/IP difiere 
+entre ambos.  TCP/IP combinan las funciones de las capas de presentación
+ y de sesión solamente por medio de la capa de aplicación, así como 
+también capas de enlace de datos y la capa física del modelo OSI en una 
+sola capa, con la presentación de menores capas además de su mejor 
+adaptación a los protocolos.</p>
+
+
+<h4>Referencias </h4> 
+
+<p class="francesa">Tolosa, G. (2014). Protocolos y Modelo OSI.</p> 
+<p class="francesa">Alfinal.com. (2012). Obtenido de http://www.alfinal.com/Temas/tcpip.php </p> 
+<p class="francesa">DR. (17 de 03 de 2017). Modelo TCP/IP. Obtenido de www.alfinal.com: http://www.alfinal.com/Temas/tcpip.php </p> 
+<p class="francesa">Herías, F. A. (2009). Protocolos de Transporte TCP y
+ UDP. España: GITE-IEA. 
+Microchip Technology, I. (17 de 03 de 2017). TCP/IP Transport Layer 
+(Layer 4). Obtenido de http://microchipdeveloper.com/: 
+http://microchipdeveloper.com/tcpip:tcp-ip-transportlayer-layer-4}</p> 
+<p class="francesa">Oracle. (17 de 03 de 2017). Modelo de arquitectura 
+del protocolo TCP/IP. Obtenido de https://docs.oracle.com: 
+https://docs.oracle.com/cd/E19957-01/820-2981/ipov-10/ </p> 
+
+ 
+<p class="citar"></p>        
+
+<p class="francesa"><a href="#r1" id="refe1"><sup>[a]</sup></a>Alumno de la Licenciatura en Ciencias Computacionales.</p>
+  
+<p class="francesa"><a href="#r2" id="refe2"><sup>[b]</sup></a>Profesor por asignatura de la Universidad Autónoma del Estado de Hidalgo.</p>
+  
+    
+          <!-- InstanceEndEditable -->
+           		<!-- RedesSociales -->	
+				<hr>
+				<span>Compartir en: </span>
+				<div id="SocialNet" class="ssk-grayscale ssk-group ssk-center">
+					<a href="" class="ssk ssk-facebook" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-twitter" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-google-plus" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-pinterest" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-linkedin" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-tumblr" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-vk" data-ssk-ready="true"></a>
+					<a href="" class="ssk ssk-email" data-ssk-ready="true"></a>
+				</div>
+				<!-- FIN RedesSociales -->
+            </div>
+        
+        </div>
+   </div>
+   
+  </div> 
+ 
+   <!-- Logros -->
+   <div id="content-footer"><footer class="footsies">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-3 t_min">
+      
+      <p><a href="https://www.uaeh.edu.mx/legal.html" class="link-w">Legal</a></p> 
+      <p><a href="https://www.uaeh.edu.mx/privacidad.html" class="link-w">Aviso de Privacidad</a></p>
+      <p><a href="https://www.uaeh.edu.mx/acercade/" class="link-w">Contacto</a></p>
+      
+          
+          <a href="http://www.editorialox.com/" target="new"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/logo_ox_2016.png" alt="Premio Internacional OX 2016" class="img-responsive"></a> 
+          <p><a href="http://www.editorialox.com/" target="new" class="link-w"><small>Web premiada con el<br> Premio Internacional OX</small></a></p>
+          
+      </div>
+      
+      
+    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+       
+          <p><img class="center" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/logo_uaeh.png"></p>
+           
+          <p>"Amor, Orden y Progreso"</p> 
+            
+    </div>
+  
+    <div class="col-md-3 col-sm-3 col-xs-3 t_min">
+        <p><a href="http://sgc.uaeh.edu.mx/planeacion/index.php/inicio-contraloria" class="link-w">Contraloría Social</a></p>
+        <p><a href="https://www.uaeh.edu.mx/transparencia/" class="link-w">Transparencia</a></p>
+        <p><a href="https://www.uaeh.edu.mx/calendario/" class="link-w">Calendario Académico</a></p>
+        <p><a href="https://www.uaeh.edu.mx/accesibilidad/" class="link-w">Mapas y Accesibilidad</a></p>
+        <p><a href="http://www.cumex.org.mx/" class="link-w">Consorcio de Universidades Mexicanas</a></p>
+  
+    </div>
+    
+    
+  </div>
+  </div>
+  <div class="bottom-social col-lg-12 text-center">
+    <span class="soc fa-stack fa-lg">
+    <a href="https://www.facebook.com/UAEH.edu/?fref=ts" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-facebook fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+    <span class="soc fa-stack fa-lg">
+    <a href="https://twitter.com/UAEH_OFICIAL" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-twitter fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+    <span class="soc fa-stack fa-lg">
+    <a href="https://www.instagram.com/uaeh_comsoc/" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-instagram fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+   <!-- <span class="soc fa-stack fa-lg">
+    <a href="#" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-vine fa-stack-1x fa-inverse f-style"></i>
+   </a>
+    </span>-->
+    <span class="soc fa-stack fa-lg">
+    <a href="https://www.uaeh.edu.mx/itunesu/" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-apple fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+    <span class="soc fa-stack fa-lg">
+    <a href="https://www.youtube.com/user/uaehcomsoc" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-youtube fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+     <span class="soc fa-stack fa-lg">
+    <a href="https://es.linkedin.com/edu/universidad-aut%C3%B3noma-del-estado-de-hidalgo-15080" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-linkedin fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>  
+    <span class="soc fa-stack fa-lg">
+    <a href="http://www.amazon.com/s/ref=nb_sb_noss/181-5230293-9412866?url=search-alias%3Daps&amp;field-keywords=universidad+autonoma+del+estado+de+hidalgo+boletin&amp;rh=i%3Aaps%2Ck%3Auniversidad+autonoma+del+estado+de+hidalgo+boletin" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-amazon fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+    <span class="soc fa-stack fa-lg">
+    <a href="https://www.uaeh.edu.mx/radio/" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-microphone fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+    <span class="soc fa-stack fa-lg">
+    <a href="https://mail.google.com/a/uaeh.edu.mx/" class="soc">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-envelope-o fa-stack-1x fa-inverse f-style"></i>
+    </a>
+    </span>
+
+</div>
+  
+</footer></div>
+   <!-- FIN Logros -->
+    
+</div>
+
+<script src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/jquery.js"></script>
+<script src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/bootstrap.js"></script>
+<script src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/funciones.js"></script>
+<script src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/ruta.js" type="text/javascript"></script>
+<script type="text/javascript" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/social-share-kit.js"></script>
+
+<!-- InstanceBeginEditable name="ruta_menu" -->
+<script>
+	$('#menu_izquierdo').load('menu_izq/izq.html');
+</script>
+<!-- InstanceEndEditable --> 
+
+<script>
+$('#content-menu-lateral').load('/estructura/content-menu-lateral.html');
+$('#content-menu-top').load('/estructura/content-menu-top.html');
+$('#content-footer').load('/estructura/content-footer.html');
+obtenerRuta(window.location.pathname);
+SocialShareKit.init();
+</script>
+<!-- InstanceBeginEditable name="page-scripts" -->
+<script type="text/javascript" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/clearbox.js"></script><link rel="stylesheet" type="text/css" href="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cb_style.css"><script type="text/javascript" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cb_config.js"></script><script type="text/javascript" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cb_language.js"></script><script type="text/javascript" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/cb_core.js"></script>
+ <!-- InstanceEndEditable --><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/translate_24dp.png" alt="Google Translate" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+ 
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 228px; height: 285px; display: none;" frameborder="0"></iframe><div id="CB_Debug"></div><div id="CB_HiddenTextT" style="font-family: helvetica, arial, sans-serif; font-weight: normal; font-size: 15px; line-height: 0px;"></div><div id="CB_HiddenTextC" style="font-family: helvetica, arial, sans-serif; font-weight: normal; font-size: 13px; text-align: justify;"></div><div id="CB_HiddenTextG" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(170, 170, 170); font-size: 11px; line-height: normal;"> <a onmousecover="_C94(CB_Nav_C8_);" onmouseout="_C85();" class="CB_TextNav" target="_blank" href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_1.jpg">pantalla completa</a><a name="hack" class="CB_TextNav">pantalla completa</a></div><div id="CB_All"><div id="CB_ContentHide" style="background-color: rgb(0, 0, 0); opacity: 0.9; visibility: visible; height: 7707px; width: 100%;"></div><div id="CB_OutNavContainer" style="visibility: visible; display: none;"><div id="CB_OutNavG">&nbsp;</div><div id="CB_OutNavBG"></div><div id="CB_OutNavB"><a onmouseover="_C94(_C110);" onmouseout="_C85();" id="CB_ONRL" name="rl"><img class="CB_OutNav" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/rot_l_outer.gif" alt="rotación de la imagen 90° hacia la izquierda" title="rotación de la imagen 90° hacia la izquierda"></a><a onmouseover="_C94(_C92);" onmouseout="_C85();" id="CB_ONPRV" style="visibility: hidden;"><img class="CB_OutNav" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/prev_outer.gif" alt="anterior" title="anterior"></a><a name="CB_ONSSP" id="CB_ONSSP" style="position: absolute; visibility: hidden;"><img alt="detener la presentación" title="detener la presentación" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/pause_outer.gif"></a><a name="CB_ONSSS" id="CB_ONSSS"><img alt="iniciar la presentación" title="iniciar la presentación" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/start_outer.gif"></a><a onmouseover="_C94(_C91);" onmouseout="_C85();" id="CB_ONNXT" style="visibility: hidden;"><img class="CB_OutNav" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/next_outer.gif" alt="siguiente" title="siguiente"></a><a onmouseover="_C94(_C111);" onmouseout="_C85();" id="CB_ONRR" name="rr"><img class="CB_OutNav" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/rot_r_outer.gif" alt="rotación de la imagen 90° hacia la derecha" title="rotación de la imagen 90° hacia la derecha"></a></div></div><div id="CB_OSD" style="opacity: 0.75; visibility: hidden; top: 10px; margin-left: -29.5px; padding: 5px 10px;">cerrar</div><div id="CB_SlideShowBar" style="background-color: rgb(255, 255, 255); opacity: 0.5; width: 0px; display: none;"></div><img id="CB_LoadingImage" alt="loading" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/loading.gif" style="visibility: hidden;"><table id="CB_Window" style="width: 1px; margin-left: -407px; margin-top: -302px; visibility: visible;" cellspacing="0" cellpadding="0"><tbody><tr id="CB_Header" style="height: 12px;"><td id="CB_TopLeft"><div class="CB_RoundPixBugFix" style="width: 12px; height: 12px;"></div></td><td id="CB_Top"></td><td id="CB_TopRight"><div class="CB_RoundPixBugFix" style="width: 12px; height: 12px;"></div></td></tr><tr id="CB_Body"><td id="CB_Left" style="width: 12px;"></td><td id="CB_Content" style="background-color: rgb(255, 255, 255);" align="left" valign="top"><div id="CB_Padding" style="padding: 4px; background-color: rgb(255, 255, 255);"><div id="CB_ImgContainer" style="height: 549px;"><img id="CB_CloseWindow" alt="cerrar" title="cerrar" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/close.png" style="display: block; top: -10px; right: -14px;"><div id="CB_NotImgContent" style="display: none;"></div><div id="CB_ShowTh" style="visibility: hidden;"></div><div id="CB_Thumbs" style="width: 0px; display: block;"><div id="CB_Thumbs2"></div></div><canvas id="CB_Image" style="border: 0px solid rgb(221, 221, 221); visibility: visible; opacity: 1; width: 782px; height: 549px; display: block; overflow: hidden;" width="782" height="549"></canvas><img id="CB_Image2" alt="" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/r1_1.jpg" style="display: none;"><div id="CB_PrevNext" style="display: block;"><img id="CB_NavPrev" alt="" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/prev.png" style="visibility: hidden;"><img id="CB_NavNext" alt="" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/next.png" style="visibility: hidden;"><div id="CB_ImgHide" style="background-color: rgb(0, 0, 0); opacity: 0.35; width: 782px; height: 549px; visibility: hidden;"></div><img id="CB_SlideShowP" alt="detener la presentación" title="detener la presentación" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/pause.png" style="display: none;"><img id="CB_SlideShowS" alt="iniciar la presentación" title="iniciar la presentación" src="COMPARACI%C3%93N%20DE%20LOS%20MODELOS%20OSI%20Y%20TCP_IP_files/start.png" style="display: none;"><a id="CB_Prev" style="background-image: url(&quot;/js/clearbox/config/default/pic/blank.gif&quot;); display: none; height: 549px;"></a><a id="CB_Next" style="background-image: url(&quot;/js/clearbox/config/default/pic/blank.gif&quot;); display: none; height: 549px;"></a></div></div><div id="CB_Text" style="height: 24px; display: block; visibility: visible; opacity: 1; width: 782px; overflow: hidden;"><div id="CB_TT" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(85, 85, 85); font-size: 0px; left: 0px; line-height: 0px; height: 0px; margin-top: 10px; text-align: left;"></div><div id="CB_TC" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(119, 119, 119); font-size: 13px; text-align: justify; display: none;"></div><div id="CB_TG" style="font-family: helvetica, arial, sans-serif; font-weight: normal; color: rgb(170, 170, 170); font-size: 11px; display: block;"> <a onmousecover="_C94(CB_Nav_C8_);" onmouseout="_C85();" class="CB_TextNav" target="_blank" href="https://www.uaeh.edu.mx/scige/boletin/huejutla/n10/multimedia/r1/r1_1.jpg">pantalla completa</a><span class="CB_Sep"> | </span> <a onmouseover="_C94(_C110);" onmouseout="_C85();" class="CB_TextNav" id="CB_RotL" name="rl">rotación de la imagen 90° hacia la izquierda</a> <a onmouseover="_C94(_C111);" onmouseout="_C85();" class="CB_TextNav" id="CB_RotR" name="rr">rotación de la imagen 90° hacia la derecha</a></div></div></div></td><td id="CB_Right" style="width: 12px;"></td></tr><tr id="CB_Footer" style="height: 12px;"><td id="CB_BtmLeft"><div class="CB_RoundPixBugFix" style="width: 12px; height: 12px;"></div></td><td id="CB_Btm"></td><td id="CB_BtmRight"><div class="CB_RoundPixBugFix" style="width: 12px; height: 12px;"></div></td></tr></tbody></table></div><iframe class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 226px; height: 285px; display: none;" frameborder="0"></iframe><iframe class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 192px; height: 73px; display: none;" frameborder="0"></iframe></body><!-- InstanceEnd --></html>
